@@ -1,0 +1,16 @@
+# coding:utf-8
+def findMinAndMax(L):
+    Min = L[0]
+    Max = L[0]
+    for i in L:
+        if i < Min:
+            Min = i
+        if i > Max:
+            Max =i
+    return (Min,Max)
+
+if __name__ == '__main__':
+    L = ['1','2','3','4']
+    L = findMinAndMax(L)
+    print(L)
+
