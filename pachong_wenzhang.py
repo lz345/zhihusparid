@@ -35,6 +35,7 @@ def crawl(url):
     page = resp.content
     root = html.fromstring(page)
     image_urls = root.xpath('//img[@data-original]/@data-original')
+
     for image_url in image_urls:
         save_image(image_url)
 
